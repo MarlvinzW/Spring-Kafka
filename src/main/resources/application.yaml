@@ -1,0 +1,19 @@
+# ===============================
+# = SPRING KAFKA CONFIGS
+# ===============================
+
+spring:
+  kafka:
+    producer:
+      bootstrap-servers: kafka:9092
+    consumer:
+      group-id: 0
+      auto-offset-reset: earliest
+      bootstrap-servers: kafka:9092
+
+# ===============================
+# = APPLICATION LISTENERS
+# ===============================
+
+listeners:
+  topic1: testTopic
